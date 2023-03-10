@@ -1,0 +1,124 @@
+ .post{
+    background: var(--gray-800);
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+}
+
+.author{
+    display: flex;
+}
+
+.author img{
+   width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
+
+.authorInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.authorInfo strong{
+    font-size: 1rem;
+    color: var(--gray-100);
+    line-height: 1.6rem;
+}
+
+.authorInfo span{
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height:1.6rem;
+}
+
+.header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content{
+display: flex;
+flex-direction: column;
+line-height: 1.6rem;
+color: var(--gray-300);
+margin-top: 1.5rem;
+}
+
+.content p{
+    margin-top: 1rem;
+}
+
+.content a{
+    color: var(--green-500);
+    transition: color 0.1s;
+}
+
+.content a:hover{
+    color: var(--gray-300);
+}
+
+
+
+.content p:last-child{
+    margin-bottom: 2rem;
+}
+
+.commentForm{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-600);
+}
+.commentForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.commentForm strong{
+
+}
+
+.commentForm textarea{
+    width: 100%;
+    background: var(--gray-900);
+    border:0;
+    resize: none;
+    height: 6rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    color: var(--gray-100);
+    line-height: 1.4rem;    
+}
+
+.commentForm button[type="submit"]{
+    width:108px;
+    height: 49px;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: var(--green-500);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.commentForm button:hover:not(:disabled):hover{
+    background: var(--green-300);
+}
+
+/* desabilitar o botão quando o textarea estiver vazio */
+.commentForm button[type="submit"]:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
